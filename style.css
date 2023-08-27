@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Ubuntu+Mono&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Ubuntu Mono;
+}
+
+/* Mudança de cor da página */
+
+#checkboxInput {
+    display: none;
+  }
+  
+  .toggleSwitch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 50px;
+    height: 30px;
+    background-color: rgb(82, 82, 82);
+    border-radius: 20px;
+    cursor: pointer;
+    transition-duration: .2s;
+  }
+  
+  .toggleSwitch::after {
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    left: 5px;
+    background-color: transparent;
+    border-radius: 50%;
+    transition-duration: .2s;
+    box-shadow: 5px 2px 7px rgba(8, 8, 8, 0.26);
+    border: 5px solid white;
+  }
+  
+  #checkboxInput:checked+.toggleSwitch::after {
+    transform: translateX(100%);
+    transition-duration: .2s;
+    background-color: white;
+  }
+  /* Switch background change */
+  #checkboxInput:checked+.toggleSwitch {
+    background-color: #6BDB43;
+    transition-duration: .2s;
+  }
+
+  .toggleSwitch {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000; /* Certifique-se de que o z-index seja maior que outros elementos para que ele fique acima */
+}
+
+body.dark{
+    background-color: #232c35;
+    color: #f3f6f8;
+    
+}
+
+body.dark .navItems a{
+    color: #f3f6f8; /* Change to your preferred dark mode hover color */
+}
+
+body.dark .navItems a:hover {
+    color: #6BDB43; /* Change to your preferred dark mode hover color */
+}
+
+/* Conteúdo principal */
+
+body{
+    background-color: #f3f6f8;
+    transition: background 0.2s linear;
+    color: black;
+}
+
+
+header{
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    z-index: 111;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    
+}
+
+.logoName{
+    width: 50px; /* Ajuste o tamanho conforme necessário */
+    height: 50px; /* Ajuste o tamanho conforme necessário */
+    margin-right: 10px;
+}
+
+
+h1 {
+    margin: 0;
+    font-size: 24px; /* Ajuste o tamanho conforme necessário */
+}
+
+.navItems {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navItems li {
+    margin-right: 20px;
+}
+
+.navItems a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navItems a:hover {
+    color: #6BDB43 ; /* Change to your preferred hover color */
+}
+
+.links a {
+    margin-right: 15px;
+}
+
+.home{
+    height: 80vh;
+    background: url(img/undraw_react_re_g3ui.svg) no-repeat;
+    background-position: right;
+    right: 10%;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.home-content{
+    max-width: 600px;
+}
+
+.home-content h1{
+    font-size: 56px;
+    font-weight: 700;
+}
+
+.home-content h3{
+    font-size: 32px;
+    font-weight: 700;
+    color: #6BDB43;
+}
+
+.home-content p{
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.home {
+    min-height: 80vh; /* Usar min-height para garantir que o conteúdo não fique cortado */
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+/* Configuração responsiva */
+@media screen and (max-width: 768px) {
+    .navItems {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navItems li {
+        margin: 10px 0;
+    }
+
+    .logoName {
+        width: 40px;
+        height: 40px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .home {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .home {
+        background-image: none; /* Remove a imagem de fundo */
+        background-color: #f4f4f4; /* Define uma cor de fundo */
+    }
+
+    .home-content {
+        text-align: center; /* Centraliza o conteúdo */
+    }
+}
+
+.tiTextDark {
+    color: #f3f6f8; /* Cor do texto no modo escuro */
+}
+
+.tiTextLight {
+    color: black; /* Cor do texto no modo claro */
+}
+
+
