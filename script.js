@@ -18,7 +18,11 @@ chk.addEventListener('change', () => {
                 icon.src = 'img/github2.svg'; // Altere o caminho para a imagem do GitHub no modo escuro
             } else if (link.classList.contains('mail')) {
                 icon.src = 'img/mail2.svg'; // Altere o caminho para a imagem de e-mail no modo escuro
+            } else if (link.classList.contains('expo')) {
+                icon.src = 'img/react2.svg'; // Altere o caminho para a imagem de e-mail no modo escuro
             }
+            
+            
         } else {
             if (link.classList.contains('linkedin')) {
                 icon.src = 'img/linkedin.svg'; // Altere o caminho para a imagem do LinkedIn no modo claro
@@ -26,6 +30,8 @@ chk.addEventListener('change', () => {
                 icon.src = 'img/github.svg'; // Altere o caminho para a imagem do GitHub no modo claro
             } else if (link.classList.contains('mail')) {
                 icon.src = 'img/mail.svg'; // Altere o caminho para a imagem de e-mail no modo claro
+            } else if (link.classList.contains('expo')) {
+                icon.src = 'img/react.svg'; // Altere o caminho para a imagem de e-mail no modo escuro
             }
         }
     });
