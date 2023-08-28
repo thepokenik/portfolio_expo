@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portifólio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="/img/icons8-clover-100.png"
+      type="image/x-icon"
+    />
+    <script
+      crossorigin="anonymous"
+      integrity=" "
+      src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"
+      defer
+    ></script>
+    <script src="https://unpkg.com/scrollreveal" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img class="logoName" src="img/icons8-clover-100.png" />
+          <h1>&lt;Expo-dev./&gt;</h1>
+        </div>
+        <ul class="navItems">
+          <li><a href="">Home</a></li>
+          <li><a href="">Sobre</a></li>
+          <li><a href="">Habilidades</a></li>
+          <li><a href="">Projetos</a></li>
+        </ul>
+        <div class="links">
+          <a class="socialLink linkedin" href="#"
+            ><img src="img/linkedin.svg"
+          /></a>
+          <a class="socialLink github" href="#"><img src="img/github.svg" /></a>
+          <a class="socialLink mail" href="#"><img src="img/mail.svg" /></a>
+        </div>
+      </nav>
+      <div>
+        <input type="checkbox" id="checkboxInput" />
+        <label for="checkboxInput" class="toggleSwitch">
+          <i class="fas fa-moon"></i>
+          <i class="fas fa-sun"></i>
+        </label>
+      </div>
+    </header>
+    <main>
+      <section class="home">
+        <article class="home-content">
+          <h1 id="simpleUsage">Olá, Somos Heitor e Nikolas.</h1>
+          <h3>Portifolio React Native</h3>
+          <p>
+            Bem-vindos ao nosso site de portfólio mobile! Os projetos desse site
+            foi desenvolvido utilizando a plataforma Expo, permitindo-nos criar
+            uma experiência móvel envolvente e interativa.
+          </p>
+        </article>
+      </section>
+      <section class="projects-list headline">
+        <div class="project-section section" id="projects">
+          <h1 class="section-header">Projects</h1>
+
+          <div class="project project-1 flex">
+            <div class="project-img">
+              <img src="img/elfbank_example.png" alt="" />
+            </div>
+
+            <div class="project-content flex">
+              <h1 class="project-header">ElfBank</h1>
+              <p class="project-description">
+                O aplicativo "ElfBank" criado no Expo possui uma tela de
+                cadastro simples e amigável. Nessa tela, os usuários podem
+                preencher campos como nome, e-mail, senha, CPF E RG. Após o
+                preenchimento, ao pressionar o botão de confirmar, suas
+                informações são verificadas e uma nova tela de cadastro é
+                carregada, sendo para preenchimento de dados de endereço. O
+                aplicativo Expo garante uma experiência suave, com recursos como
+                sugestões de entrada.
+              </p>
+              <div class="btn-group">
+                <button class="comic-button">Live Demo</button>
+                <button class="comic-button">View Code</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="project project-2 flex">
+            <div class="project-img">
+              <img src="img/cineclover_example.png" alt="" />
+            </div>
+
+            <div class="project-content flex">
+              <h1 class="project-header">CineClover</h1>
+              <p class="project-description">
+                O aplicativo "CineClover" feito com Expo exibe uma tela onde os
+                usuários podem encontrar filmes em cartaz. Eles podem buscar
+                filmes por nome ou categoria. A lista de filmes mostra detalhes
+                como título, data de lançamento, categoria e sinopse. A
+                navegação é intuitiva e facilita a exploração dos filmes
+                disponíveis no cinema.
+              </p>
+              <div class="btn-group">
+                <button class="comic-button">Live Demo</button>
+                <button class="comic-button">View Code</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <section>
+      <div class="contact-section section" id="contact">
+        <h1 class="section-header">
+            Contato
+        </h1>
+
+        <form action="" class="contact-form flex">
+            <div class="contact-group flex">
+                <input type="text" name="username" placeholder="Seu nome" required id="">
+                <input type="email" name="email" placeholder="Seu email" required id="">
+            </div>
+            <textarea name="" id="" required placeholder="Sua mensagem" cols="30" rows="10"></textarea>
+
+            <button class="comic-button">Enviar</button>
+        </form>
+    </div>
+    </section>
+  </body>
+</html>
