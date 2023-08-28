@@ -13,25 +13,25 @@ chk.addEventListener('change', () => {
         const icon = link.querySelector('img');
         if (document.body.classList.contains('dark')) {
             if (link.classList.contains('linkedin')) {
-                icon.src = 'img/linkedin2.svg'; // Altere o caminho para a imagem do LinkedIn no modo escuro
+                icon.src = 'img/linkedin2.svg'; 
             } else if (link.classList.contains('github')) {
-                icon.src = 'img/github2.svg'; // Altere o caminho para a imagem do GitHub no modo escuro
+                icon.src = 'img/github2.svg'; 
             } else if (link.classList.contains('mail')) {
-                icon.src = 'img/mail2.svg'; // Altere o caminho para a imagem de e-mail no modo escuro
+                icon.src = 'img/mail2.svg'; 
             } else if (link.classList.contains('expo')) {
-                icon.src = 'img/react2.svg'; // Altere o caminho para a imagem de e-mail no modo escuro
+                icon.src = 'img/react2.svg'; 
             }
             
             
         } else {
             if (link.classList.contains('linkedin')) {
-                icon.src = 'img/linkedin.svg'; // Altere o caminho para a imagem do LinkedIn no modo claro
+                icon.src = 'img/linkedin.svg'; 
             } else if (link.classList.contains('github')) {
-                icon.src = 'img/github.svg'; // Altere o caminho para a imagem do GitHub no modo claro
+                icon.src = 'img/github.svg';
             } else if (link.classList.contains('mail')) {
-                icon.src = 'img/mail.svg'; // Altere o caminho para a imagem de e-mail no modo claro
+                icon.src = 'img/mail.svg'; 
             } else if (link.classList.contains('expo')) {
-                icon.src = 'img/react.svg'; // Altere o caminho para a imagem de e-mail no modo escuro
+                icon.src = 'img/react.svg';
             }
         }
     });

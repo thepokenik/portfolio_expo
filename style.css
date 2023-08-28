@@ -7,8 +7,6 @@
   font-family: Ubuntu Mono;
 }
 
-/* Mudança de cor da página */
-
 #checkboxInput {
   display: none;
 }
@@ -44,7 +42,7 @@
   transition-duration: 0.2s;
   background-color: white;
 }
-/* Switch background change */
+
 #checkboxInput:checked + .toggleSwitch {
   background-color: #6bdb43;
   transition-duration: 0.2s;
@@ -54,7 +52,7 @@
   position: absolute;
   top: 20px;
   right: 20px;
-  z-index: 1000; /* Certifique-se de que o z-index seja maior que outros elementos para que ele fique acima */
+  z-index: 1000;
 }
 
 body.dark {
@@ -63,14 +61,14 @@ body.dark {
 }
 
 body.dark .navItems a {
-  color: #f3f6f8; /* Change to your preferred dark mode hover color */
+  color: #f3f6f8; 
 }
 
 body.dark .navItems a:hover {
-  color: #6bdb43; /* Change to your preferred dark mode hover color */
+  color: #6bdb43; 
 }
 
-/* Conteúdo principal */
+
 
 body {
   background-color: #f3f6f8;
@@ -100,14 +98,14 @@ nav {
 }
 
 .logoName {
-  width: 50px; /* Ajuste o tamanho conforme necessário */
-  height: 50px; /* Ajuste o tamanho conforme necessário */
+  width: 50px; 
+  height: 50px; 
   margin-right: 10px;
 }
 
 h1 {
   margin: 0;
-  font-size: 24px; /* Ajuste o tamanho conforme necessário */
+  font-size: 24px; 
 }
 
 .navItems {
@@ -129,7 +127,7 @@ h1 {
 }
 
 .navItems a:hover {
-  color: #6bdb43; /* Change to your preferred hover color */
+  color: #6bdb43;
 }
 
 .links a {
@@ -167,7 +165,7 @@ h1 {
 }
 
 .home {
-  min-height: 80vh; /* Usar min-height para garantir que o conteúdo não fique cortado */
+  min-height: 80vh; 
   display: flex;
   align-items: center;
   padding: 0 10%;
@@ -204,21 +202,21 @@ h1 {
 
 @media screen and (max-width: 768px) {
   .home {
-    background-image: none; /* Remove a imagem de fundo */
-    background-color: #f4f4f4; /* Define uma cor de fundo */
+    background-image: none; 
+    background-color: #f4f4f4; 
   }
 
   .home-content {
-    text-align: center; /* Centraliza o conteúdo */
+    text-align: center; 
   }
 }
 
 .tiTextDark {
-  color: #f3f6f8; /* Cor do texto no modo escuro */
+  color: #f3f6f8; 
 }
 
 .tiTextLight {
-  color: black; /* Cor do texto no modo claro */
+  color: black; 
 }
 
 .expo {
@@ -243,22 +241,22 @@ h1 {
 
 .project {
   display: flex;
-  align-items: center; /* Alinha verticalmente */
+  align-items: center; 
   margin: 50px 0;
   overflow: hidden;
 }
 
 .project-img {
-  flex: 0.5; /* Ocupa uma parte flexível do espaço */
-  padding: 0 20px; /* Adiciona espaçamento */
+  flex: 0.5; 
+  padding: 0 20px; 
 }
 
 .project-img img {
-  width: 100%; /* Ocupa todo o espaço disponível */
+  width: 100%; 
 }
 
 .project-content {
-  flex: 2; /* Ocupa uma parte maior do espaço */
+  flex: 2;
   padding-inline: 20px;
   color: var(--main-txt-color);
 }
