@@ -7,6 +7,10 @@
   font-family: Ubuntu Mono;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Mudança de cor da página */
 
 #checkboxInput {
@@ -144,10 +148,6 @@ h1 {
   color: #6bdb43; /* Change to your preferred hover color */
 }
 
-.links a {
-  margin-right: 15px;
-}
-
 .home {
   height: 80vh;
   background: url(img/undraw_react_re_g3ui.svg) no-repeat;
@@ -262,6 +262,10 @@ h1 {
   text-decoration: underline;
   text-decoration-color: #6bdb43;
   /* visibility: hidden; */
+}
+
+body.dark .section-footer {
+  color: #fff;
 }
 
 .projects-list {
@@ -530,7 +534,7 @@ h3 {
   height: 80vh;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .about-img {
@@ -538,6 +542,10 @@ h3 {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  width: 35vh;
+  height: 35vh;
+  border-radius: 100%;
+  border: 5px solid #6bdb43;
 }
 
 .about-content {
@@ -548,6 +556,22 @@ h3 {
 .about-content h1 {
   font-size: 56px;
   font-weight: 700;
+  text-align: center;
+  margin: 10px;
+  text-decoration: underline;
+  text-decoration-color: #6bdb43;
+}
+
+.links {
+  margin-right: 15px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 20px;
+}
+
+.links img {
+  width: 35px;
 }
 
 .about-content p {
@@ -565,4 +589,28 @@ h3 {
 
 .about-content {
   max-width: 600px;
+}
+
+#myBtn {
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #6bdb43;
+  border: 2px solid #000;
+  border-radius: 10px;
+}
+
+body.dark #myBtn {
+  border: 2px solid #fff;
+}
+
+#myBtn:hover {
+  background-color: #4e9c32; /* Add a dark-grey background on hover */
 }
