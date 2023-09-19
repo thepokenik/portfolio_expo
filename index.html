@@ -32,17 +32,10 @@
         </div>
         <ul class="navItems">
           <li><a href="">Home</a></li>
-          <li><a href="">Sobre</a></li>
-          <li><a href="">Habilidades</a></li>
-          <li><a href="">Projetos</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#projetos">Projetos</a></li>
         </ul>
-        <div class="links">
-          <a class="socialLink linkedin" href="#"
-            ><img src="img/linkedin.svg"
-          /></a>
-          <a class="socialLink github" href="#"><img src="img/github.svg" /></a>
-          <a class="socialLink mail" href="#"><img src="img/mail.svg" /></a>
-        </div>
       </nav>
       <!-- ============== Toggle Switch ================ -->
       <div>
@@ -50,6 +43,7 @@
         <label for="checkboxInput" class="toggleSwitch"> </label>
       </div>
     </header>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Topo</button>
     <main>
       <!-- ============== Home Page================ -->
       <section class="home">
@@ -64,7 +58,7 @@
         </article>
       </section>
       <!-- ============== Projetos ================ -->
-      <section class="projects-list headline">
+      <section class="projects-list headline" id="projetos">
         <div class="project-section section" id="projects">
           <h1 class="section-header">Projects</h1>
           <!-- ============== Projeto 1 ================ -->
@@ -193,7 +187,7 @@
         </div>
       </section>
       <!-- ============== Habilidades ================ -->
-      <section>
+      <section id="habilidades">
         <div class="inner">
           <div class="section-header">
             <h4>Habilidades</h4>
@@ -251,16 +245,52 @@
         </div>
       </section>
       <!-- ============== Sobre ================ -->
-      <section>
+      <section id="sobre">
         <h1 class="about-title">Sobre</h1>
         <section class="home-about">
           <article class="about-content">
-            <img src="img/loucoesonhador.png" class="about-img" />
-            <h1 id="simpleUsage">Heitor e Nikolas.</h1>
+            <img src="img/heitor.png" class="about-img" />
+            <h1 id="simpleUsage">Heitor</h1>
             <p>
-              Dois estudantes fudidos de Desenvolvimento de Sistema e usuários
-              de crack.
+              Estudante entusiasmado de Desenvolvimento de Sistemas com paixão
+              por programação.
             </p>
+            <div class="links">
+              <a
+                class="socialLink linkedin"
+                href="https://www.linkedin.com/in/heitor-manoel-465413250/"
+                target="_blank"
+                ><img src="img/linkedin.svg"
+              /></a>
+              <a
+                class="socialLink github"
+                href="https://github.com/lonelykkj"
+                target="_blank"
+                ><img src="img/github.svg"
+              /></a>
+            </div>
+          </article>
+          <article class="about-content">
+            <img src="img/nikolas.png" class="about-img" />
+            <h1 id="simpleUsage">Nikolas</h1>
+            <p>
+              Estagiário apaixonado por desenvolvimento de software com um foco
+              especial em Inteligência Artificial e Visão Computacional.
+            </p>
+            <div class="links">
+              <a
+                class="socialLink linkedin"
+                href="https://www.linkedin.com/in/nikolas-melo-5743b1258/"
+                target="_blank"
+                ><img src="img/linkedin.svg"
+              /></a>
+              <a
+                class="socialLink github"
+                href="https://github.com/thepokenik"
+                target="_blank"
+                ><img src="img/github.svg"
+              /></a>
+            </div>
           </article>
         </section>
       </section>
@@ -299,6 +329,7 @@
         </form>
       </div>
     </section>
+
     <!-- ============== Footer ================ -->
     <footer>
       <section class="section-footer">
