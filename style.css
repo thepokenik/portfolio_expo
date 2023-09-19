@@ -70,6 +70,18 @@ body.dark .navItems a:hover {
   color: #6bdb43; /* Change to your preferred dark mode hover color */
 }
 
+body.dark .section-header{
+  color: white;
+}
+
+body.dark .skill-title{
+  color: white;
+}
+
+body.dark .about-title{
+  color: white;
+}
+
 /* Conteúdo principal */
 
 body {
@@ -228,67 +240,320 @@ h1 {
 
 .section-header {
   text-align: center;
+  font-size: 40px;
+  margin-bottom: 15vh;
+  /* visibility: hidden; */
+}
+
+.section-footer {
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 5vh;
+  margin-top: 5vh;
+  color: black;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: #6bdb43;
+  /* visibility: hidden; */
 }
 
 .projects-list {
   display: flex;
   align-items: center;
   padding: 0 10%;
+  margin-top: 20vh;
+  /* visibility: hidden; */
 }
 
 .project-section {
   height: auto;
   width: 100%;
+  /* visibility: hidden; */
 }
 
 .project {
   display: flex;
   align-items: center; /* Alinha verticalmente */
-  margin: 50px 0;
+  justify-content: center;
+  margin: 0 auto;
   overflow: hidden;
+  /* visibility: hidden; */
+}
+
+.project-2 {
+  align-items: center;
 }
 
 .project-img {
   flex: 0.5; /* Ocupa uma parte flexível do espaço */
   padding: 0 20px; /* Adiciona espaçamento */
+  /* visibility: hidden; */
 }
 
 .project-img img {
   width: 100%; /* Ocupa todo o espaço disponível */
+  /* visibility: hidden; */
 }
 
 .project-content {
   flex: 2; /* Ocupa uma parte maior do espaço */
   padding-inline: 20px;
   color: var(--main-txt-color);
+  /* visibility: hidden; */
 }
 .project-description {
   text-align: justify;
   margin-top: 20px;
   margin-bottom: 20px;
   margin-right: 600px;
+  /* visibility: hidden; */
 }
 
-.btn-group button {
-  margin-right: 20px;
-}
-
-.btn {
-  border: none;
-  border-radius: 10px;
+.comic-button {
+  display: inline-block;
   padding: 10px 20px;
-  background-color: var(--btn-bg-color);
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #6bdb43;
+  border: 2px solid #000;
+  border-radius: 10px;
+  box-shadow: 5px 5px 0px #000;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.comic-button:hover {
+  background-color: #fff;
+  color: #6bdb43;
+  border: 2px solid #6bdb43;
+  box-shadow: 5px 5px 0px #6bdb43
+}
+
+.comic-button:active {
+  background-color: #fcf414;
+  box-shadow: none;
+  transform: translateY(4px);
+}
+
+.contact-section{
+  height: auto;
+  width: 100%;
+  padding: 50px 0;
+}
+.contact-section form {
+  padding-top: 0px;
+}
+
+.section-header{
+  color: black;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: #6bdb43;
+  margin-bottom: 50px;
+}
+
+.contact-section form,
+form .contact-group{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-group{
+  height: auto;
+  width: 100%;
+}
+
+.contact-group input,
+textarea{
+  width: 350px;
+  margin: 10px 0;
+  padding: 1rem 1.2rem;
+  border-radius: .5rem;
+  background-color: #f3f6f9;
+  color: #000;
+  font-family: var(--main-font-family);
   font-size: var(--fs-regular);
-  font-weight: var(--fw-large);
-  color: var(--btn-txt-color);
+  font-weight: var(--fw-medium);
+}
+
+.contact-group input::placeholder,
+textarea::placeholder{
+  font-size: var(--fs-regular);
+}
+
+textarea{
+  height: 11rem;
+}
+
+/* =============== scroll bar style =============== */
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: var(--scrollbar-bg-color); /* Cor de fundo padrão da página */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #6bdb43; /* Cor da thumb da barra de rolagem */
+  border-radius: 5px;
+}
+
+/* =============== Skills =============== */
+
+.inner{
+  margin-top: 30vh;
+}
+
+.container-skills{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center  ;
+  grid-gap: 1rem;
+  padding: 1rem 80px;
+  font-size: 1.2rem;
+}
+
+.skill-box{
+  padding: 1rem;
+  color: #ddd;
   cursor: pointer;
-  transition: all 0.5s ease;
 }
-.btn i {
-  padding-left: 10px;
+
+.skill-box:hover .img-skill{
+  transform:  translateY(-10px);
 }
-.btn:hover {
-  transform: translateY(-5px) scale(1.05);
-  background-color: var(--btn-bg-hover-color);
-  box-shadow: var(--btn-bg-shadow);
+
+.skill-box:hover .skill-title::after, .skill-box:hover > .skill-title::before{
+  width: 35px;
+}
+
+.skill-title{
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  position: relative;
+}
+
+h3{
+  margin-top: 10px;
+}
+
+.skill-title:after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  width: 0;
+  height: 4px;
+  border-radius: 2px 0 0 2px;
+  background-color: #6bdb43;
+  transition: .5s;
+}
+
+.skill-title:before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 4px;
+  border-radius: 0 2px 2px 0;
+  background-color: #6bdb43;
+  transition: .5s;
+}
+
+.img-skill{
+  width: 100px;
+  height: 100px;
+  position: relative;
+  border-radius: 50px;
+  background-color: rgb(230, 222, 222);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-skill::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100px;
+  background: rgb(100, 100, 100, 0.5);
+  border-radius: 50px 0 0 50px;
+}
+
+.skill-icon{
+  width: 80px;
+  z-index: 2;
+}
+
+@media screen and (max-width: 990px){
+  .container-skills{
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem 50px;
+  }
+}
+
+/* =============== Sobre =============== */
+
+.about-title {
+  color: black;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: #6bdb43;
+  margin-top: 30vh;
+  font-size: 40px;
+}
+
+.home-about {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.about-content {
+  max-width: 600px;
+  /* margin-left: auto; Alinhe o conteúdo à direita */
+}
+
+.about-content h1 {
+  font-size: 56px;
+  font-weight: 700;
+}
+
+.about-content p {
+  font-size: 16px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.home-about {
+  min-height: 80vh; /* Usar min-height para garantir que o conteúdo não fique cortado */
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+}
+
+.about-content {
+  max-width: 600px;
 }
