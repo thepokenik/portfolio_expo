@@ -4,21 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portifólio</title>
+    <!-- ============== CSS ================ -->
     <link rel="stylesheet" href="style.css" />
+    <!-- ============== Icon ================ -->
     <link
       rel="shortcut icon"
       href="/img/icons8-clover-100.png"
       type="image/x-icon"
     />
+    <!-- ============== Scripts ================ -->
     <script
       crossorigin="anonymous"
       integrity=" "
       src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"
       defer
     ></script>
+    <script src="https://unpkg.com/scrollreveal" defer></script>
     <script src="script.js" defer></script>
   </head>
   <body>
+    <!-- ============== NavBar ================ -->
     <header>
       <nav>
         <div class="logo">
@@ -39,15 +44,15 @@
           <a class="socialLink mail" href="#"><img src="img/mail.svg" /></a>
         </div>
       </nav>
+      <!-- ============== Toggle Switch ================ -->
       <div>
         <input type="checkbox" id="checkboxInput" />
         <label for="checkboxInput" class="toggleSwitch">
-          <i class="fas fa-moon"></i>
-          <i class="fas fa-sun"></i>
         </label>
       </div>
     </header>
     <main>
+      <!-- ============== Home Page================ -->
       <section class="home">
         <article class="home-content">
           <h1 id="simpleUsage">Olá, Somos Heitor e Nikolas.</h1>
@@ -59,15 +64,15 @@
           </p>
         </article>
       </section>
-      <section class="projects-list">
+      <!-- ============== Projetos ================ -->
+      <section class="projects-list headline">
         <div class="project-section section" id="projects">
           <h1 class="section-header">Projects</h1>
-
+    <!-- ============== Projeto 1 ================ -->
           <div class="project project-1 flex">
             <div class="project-img">
               <img src="img/elfbank_example.png" alt="" />
             </div>
-
             <div class="project-content flex">
               <h1 class="project-header">ElfBank</h1>
               <p class="project-description">
@@ -81,17 +86,16 @@
                 sugestões de entrada.
               </p>
               <div class="btn-group">
-                <button class="btn live-demo-btn">Live Demo</button>
-                <button class="btn view-code-btn">View Code</button>
+                <a href=""><button class="comic-button">Live Demo</button></a>
+                <a href=""><button class="comic-button">View Code</button></a>
               </div>
             </div>
           </div>
-
+          <!-- ============== Projeto 2 ================ -->
           <div class="project project-2 flex">
             <div class="project-img">
               <img src="img/cineclover_example.png" alt="" />
             </div>
-
             <div class="project-content flex">
               <h1 class="project-header">CineClover</h1>
               <p class="project-description">
@@ -103,13 +107,109 @@
                 disponíveis no cinema.
               </p>
               <div class="btn-group">
-                <button class="btn live-demo-btn">Live Demo</button>
-                <button class="btn view-code-btn">View Code</button>
+                <a href=""><button class="comic-button">Live Demo</button></a>
+                <a href=""><button class="comic-button">View Code</button></a>
               </div>
             </div>
           </div>
         </div>
       </section>
+      <!-- ============== Habilidades ================ -->
+      <section>
+        <div class="inner">
+          <div class="section-header">
+            <h4>Habilidades</h4>
+          </div>
+          <div class="container-skills">
+            <div class="skill-box">
+              <div class="skill-title">
+                <div class="img-skill">
+                  <img src="./img/html.png" alt="" class="skill-icon">
+                </div>
+                <h3>HTML 5</h3>
+              </div>
+            </div>
+            <div class="skill-box">
+              <div class="skill-title">
+                <div class="img-skill">
+                  <img src="./img/css.png" alt="" class="skill-icon">
+                </div>
+                <h3>CSS 3</h3>
+              </div>
+            </div>
+            <div class="skill-box">
+              <div class="skill-title">
+                <div class="img-skill">
+                  <img src="./img/javascript.png" alt="" class="skill-icon">
+                </div>
+                <h3>JavaScript</h3>
+              </div>
+            </div>
+            <div class="skill-box">
+              <div class="skill-title">
+                <div class="img-skill">
+                  <img src="./img/react.png" alt="" class="skill-icon">
+                </div>
+                <h3>React</h3>
+              </div>
+            </div>
+            <div class="skill-box">
+              <div class="skill-title">
+                <div class="img-skill">
+                  <img src="./img/python.png" alt="" class="skill-icon">
+                </div>
+                <h3>Python</h3>
+              </div>
+            </div>
+            <div class="skill-box">
+              <div class="skill-title">
+                <div class="img-skill">
+                  <img src="./img/nodejs.png" alt="" class="skill-icon">
+                </div>
+                <h3>NodeJs</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+       <!-- ============== Sobre ================ -->
+      <section>
+        <h1 class="about-title">Sobre</h1>
+        <section class="home-about">
+          <article class="about-content">
+            <img src="img/loucoesonhador.png" class="about-img">
+            <h1 id="simpleUsage">Heitor e Nikolas.</h1>
+            <p>
+              Dois estudantes fudidos de Desenvolvimento de Sistema e usuários de crack.
+            </p>
+          </article>
+        </section>
+      </section>
     </main>
+    <!-- ============== Formulário ================ -->
+    <section>
+      <div class="contact-section section" id="contact">
+        <h1 class="section-header">
+            Contato
+        </h1>
+        <form action="" class="contact-form flex">
+            <div class="contact-group flex">
+                <input type="text" name="username" placeholder="Seu nome" required id="">
+                <input type="email" name="email" placeholder="Seu email" required id="">
+            </div>
+            <textarea name="" id="" required placeholder="Sua mensagem" cols="30" rows="10"></textarea>
+
+            <button class="comic-button">Enviar</button>
+        </form>
+    </div>
+    </section>
+    <!-- ============== Footer ================ -->
+    <footer>
+      <section class="section-footer">
+        <span >
+          © 2023 - Nikolas Melo & Heitor Manuel
+        </span>
+      </section>
+    </footer>
   </body>
 </html>
