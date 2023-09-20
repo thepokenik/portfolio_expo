@@ -229,6 +229,63 @@ h1 {
   .home-content {
     text-align: center; /* Centraliza o conteúdo */
   }
+
+  .project-header {
+    font-size: 1.5em;
+  }
+
+  .project-description {
+    font-size: 0.9em;
+    margin-top: 10px;
+  }
+
+  .comic-button {
+    font-size: 0.8em;
+  }
+
+  .about-content h1 {
+    font-size: 1.5em;
+  }
+
+  .about-content p {
+    font-size: 0.9em;
+    margin-top: 10px;
+  }
+
+  .socialLink {
+    margin: 10px;
+  }
+}
+
+@media (min-width: 769px) {
+  .project {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .project-img {
+    flex: 1;
+    text-align: center;
+  }
+
+  .project-content {
+    flex: 2;
+    padding: 20px;
+    text-align: left;
+  }
+
+  .home-about {
+    justify-content: space-between; /* Espaçamento uniforme em telas maiores */
+  }
+
+  .about-content {
+    max-width: 400px; /* Limitar a largura em telas maiores */
+    margin-right: 20px; /* Espaçamento entre os artigos */
+  }
+
+  .about-title {
+    font-size: 48px; /* Aumentar o tamanho da fonte em telas maiores */
+  }
 }
 
 .tiTextDark {
@@ -284,12 +341,13 @@ body.dark .section-footer {
 
 .project {
   display: flex;
-  align-items: center; /* Alinha verticalmente */
-  justify-content: center;
-  margin: 0 auto;
-  overflow: hidden;
-  /* visibility: hidden; */
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
 }
+
+/* Imagens responsivas */
 
 .project-2 {
   align-items: center;
@@ -302,21 +360,14 @@ body.dark .section-footer {
 }
 
 .project-img img {
-  width: 100%; /* Ocupa todo o espaço disponível */
-  /* visibility: hidden; */
+  max-width: 100%;
+  height: auto;
 }
 
 .project-content {
   flex: 2; /* Ocupa uma parte maior do espaço */
   padding-inline: 20px;
   color: var(--main-txt-color);
-  /* visibility: hidden; */
-}
-.project-description {
-  text-align: justify;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-right: 600px;
   /* visibility: hidden; */
 }
 
@@ -530,31 +581,33 @@ h3 {
   font-size: 40px;
 }
 
+/* Layout flexível para a seção "Sobre" */
 .home-about {
-  height: 80vh;
   display: flex;
-  align-items: center;
+  flex-wrap: wrap; /* Para ajustar em telas menores */
   justify-content: space-evenly;
 }
 
-.about-img {
+/* Estilos para cada artigo */
+.about-content {
+  flex: 1;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  margin: 0 auto;
-  width: 35vh;
-  height: 35vh;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.about-img {
+  max-width: 100%;
+  height: auto;
   border-radius: 100%;
   border: 5px solid #6bdb43;
 }
 
-.about-content {
-  max-width: 600px;
-  /* margin-left: auto; Alinhe o conteúdo à direita */
-}
-
 .about-content h1 {
-  font-size: 56px;
+  font-size: 36px;
   font-weight: 700;
   text-align: center;
   margin: 10px;
@@ -563,32 +616,21 @@ h3 {
 }
 
 .links {
-  margin-right: 15px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  margin: 20px;
+  margin-top: 10px;
 }
 
 .links img {
   width: 35px;
+  margin: 0 10px;
 }
 
 .about-content p {
   font-size: 16px;
   margin-top: 10px;
   text-align: center;
-}
-
-.home-about {
-  min-height: 80vh; /* Usar min-height para garantir que o conteúdo não fique cortado */
-  display: flex;
-  align-items: center;
-  padding: 0 10%;
-}
-
-.about-content {
-  max-width: 600px;
 }
 
 #myBtn {
