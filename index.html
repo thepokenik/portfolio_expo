@@ -1,54 +1,340 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portifólio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="/img/icons8-clover-100.png" type="image/x-icon">
-    <script crossorigin="anonymous" integrity=" " src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js" defer></script>
+    <!-- ============== CSS ================ -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- ============== Icon ================ -->
+    <link
+      rel="shortcut icon"
+      href="/img/icons8-clover-100.png"
+      type="image/x-icon"
+    />
+    <!-- ============== Scripts ================ -->
+    <script
+      crossorigin="anonymous"
+      integrity=" "
+      src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"
+      defer
+    ></script>
+    <script src="https://unpkg.com/scrollreveal" defer></script>
     <script src="script.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
+    <!-- ============== NavBar ================ -->
     <header>
-        <nav>
-            <div class="logo">
-                <img class="logoName" src="img/icons8-clover-100.png">
-                <h1>
-                    &lt;Clover./&gt;
-                </h1>
-            </div>
-            <ul class="navItems">
-               <li><a href="">Home</a></li>
-               <li><a href="">Sobre</a></li>
-               <li><a href="">Habilidades</a></li>
-               <li><a href="">Projetos</a></li>
-            </ul>
-            <div class="links">
-                <a class="socialLink linkedin" href="#"><img src="img/linkedin.svg"></a>
-                <a class="socialLink github" href="#"><img src="img/github.svg"></a>
-                <a class="socialLink mail" href="#"><img src="img/mail.svg"></a>
-            </div>            
-        </nav>
-        <div>
-            <input type="checkbox" id="checkboxInput">
-            <label for="checkboxInput" class="toggleSwitch">
-                <i class="fas fa-moon"></i>
-                <i class="fas fa-sun"></i>
-            </label>
+      <nav>
+        <div class="logo">
+          <img class="logoName" src="img/icons8-clover-100.png" />
+          <h1>&lt;Expo-dev./&gt;</h1>
         </div>
+        <ul class="navItems">
+          <li><a href="">Home</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+        </ul>
+      </nav>
+      <!-- ============== Toggle Switch ================ -->
+      <div>
+        <input type="checkbox" id="checkboxInput" />
+        <label for="checkboxInput" class="toggleSwitch"> </label>
+      </div>
     </header>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Topo</button>
     <main>
-        <section class="home">
-            <article class="home-content">
-                <h1 id="simpleUsage">Olá, Somos Heitor e Nikolas.</h1>
-                <h3>Portifolio React Native</h3>
-                <p>Bem-vindos ao nosso site de portfólio mobile! Os projetos desse site foi desenvolvido utilizando a plataforma Expo, permitindo-nos criar uma experiência móvel envolvente e interativa.  </p>
-            </article>
-            <section>
-                <!-- conteudo dos projetos -->
-            </section>
+      <!-- ============== Home Page================ -->
+      <section class="home">
+        <article class="home-content">
+          <h1 id="simpleUsage">Olá, Somos Heitor e Nikolas.</h1>
+          <h3>Portifolio React Native</h3>
+          <p>
+            Bem-vindos ao nosso site de portfólio mobile! Os projetos desse site
+            foi desenvolvido utilizando a plataforma Expo, permitindo-nos criar
+            uma experiência móvel envolvente e interativa.
+          </p>
+        </article>
+      </section>
+      <!-- ============== Projetos ================ -->
+      <section class="projects-list headline" id="projetos">
+        <div class="project-section section" id="projects">
+          <h1 class="section-header">Projects</h1>
+          <!-- ============== Projeto 1 ================ -->
+          <div class="project project-1 flex">
+            <div class="project-img">
+              <img src="img/elfbank_example.png" alt="" />
+            </div>
+            <div class="project-content flex">
+              <h1 class="project-header">ElfBank</h1>
+              <p class="project-description">
+                O aplicativo "ElfBank" criado no Expo possui uma tela de
+                cadastro simples e amigável. Nessa tela, os usuários podem
+                preencher campos como nome, e-mail, senha, CPF E RG. Após o
+                preenchimento, ao pressionar o botão de confirmar, suas
+                informações são verificadas e uma nova tela de cadastro é
+                carregada, sendo para preenchimento de dados de endereço. O
+                aplicativo Expo garante uma experiência suave, com recursos como
+                sugestões de entrada.
+              </p>
+              <div class="btn-group">
+                <a
+                  href="https://snack.expo.dev/@nikolas.melo/elfbank"
+                  target="_blank"
+                  ><button class="comic-button">Expo Demo</button></a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- ============== Projeto 2 ================ -->
+          <div class="project project-2 flex">
+            <div class="project-img">
+              <img src="img/cineclover_example.png" alt="" />
+            </div>
+            <div class="project-content flex">
+              <h1 class="project-header">CineClover</h1>
+              <p class="project-description">
+                O aplicativo "CineClover" feito com Expo exibe uma tela onde os
+                usuários podem encontrar filmes em cartaz. Eles podem buscar
+                filmes por nome ou categoria. A lista de filmes mostra detalhes
+                como título, data de lançamento, categoria e sinopse. A
+                navegação é intuitiva e facilita a exploração dos filmes
+                disponíveis no cinema.
+              </p>
+              <div class="btn-group">
+                <a
+                  href="https://snack.expo.dev/@nikolas.melo/cineclover"
+                  target="_blank"
+                >
+                  <button class="comic-button">Expo Demo</button></a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- ============== Projeto 3 ================ -->
+          <div class="project project-3 flex">
+            <div class="project-img">
+              <img src="img/avaliacao_nikolas.png" alt="" />
+            </div>
+            <div class="project-content flex">
+              <h1 class="project-header">Avaliação Nikolas</h1>
+              <p class="project-description">
+                O desafio era criar um aplicativo que demonstrasse a navegação
+                entre telas e a exibição de informações sobre super-heróis da
+                Marvel. Ele serve como um exemplo de como criar uma interface de
+                usuário básica em React Native com várias telas e elementos de
+                interface de usuário personalizados.
+              </p>
+              <div class="btn-group">
+                <a
+                  href="https://snack.expo.dev/@nikolas.melo/avaliacaopam"
+                  target="_blank"
+                >
+                  <button class="comic-button">Expo Demo</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- ============== Projeto 4 ================ -->
+          <div class="project project-4 flex">
+            <div class="project-img">
+              <img src="img/avaliacao_heitor.png" alt="" />
+            </div>
+            <div class="project-content flex">
+              <h1 class="project-header">Avaliação Heitor</h1>
+              <p class="project-description">
+                O desafio era criar um aplicativo que demonstrasse a navegação
+                entre telas e a exibição de informações sobre Pokémon, mas
+                podendo fornecer um filtro da escolha. Ele serve como um exemplo
+                de como criar uma interface de usuário básica em React Native
+                com várias telas e elementos de interface de usuário
+                personalizados.
+              </p>
+              <div class="btn-group">
+                <a
+                  href="https://snack.expo.dev/@lonelykkj/prova2pami-heitor"
+                  target="_blank"
+                >
+                  <button class="comic-button">Expo Demo</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- ============== Projeto 5 ================ -->
+          <div class="project project-4 flex">
+            <div class="project-img">
+              <img src="img/pokedex.png" alt="" />
+            </div>
+            <div class="project-content flex">
+              <h1 class="project-header">Pokédex</h1>
+              <p class="project-description">
+                O desafio era criar um aplicativo que demonstrasse a navegação
+                entre telas, mas de uma forma mais simples e intuitiva, e com
+                mais telas, dentro delas contendo opções de filtragem e
+                visualização de detalhes.
+              </p>
+              <div class="btn-group">
+                <a
+                  href="https://snack.expo.dev/@nikolas.melo/pokedextelas"
+                  target="_blank"
+                >
+                  <button class="comic-button">Expo Demo</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ============== Habilidades ================ -->
+      <section id="habilidades">
+        <div class="inner">
+          <div class="section-header">
+            <h4>Habilidades</h4>
+          </div>
+          <div class="container-skills">
+            <div class="skill-box">
+              <div class="skill-title">
+                <div class="img-skill">
+                  <img src="./img/html.png" alt="" class="skill-icon" />
+                </div>
+                <h3>HTML 5</h3>
+              </div>
+            </div>
+            <div class="skill-box">
+              <div class="skill-title">
+                <div class="img-skill">
+                  <img src="./img/css.png" alt="" class="skill-icon" />
+                </div>
+                <h3>CSS 3</h3>
+              </div>
+            </div>
+            <div class="skill-box">
+              <div class="skill-title">
+                <div class="img-skill">
+                  <img src="./img/javascript.png" alt="" class="skill-icon" />
+                </div>
+                <h3>JavaScript</h3>
+              </div>
+            </div>
+            <div class="skill-box">
+              <div class="skill-title">
+                <div class="img-skill">
+                  <img src="./img/react.png" alt="" class="skill-icon" />
+                </div>
+                <h3>React</h3>
+              </div>
+            </div>
+            <div class="skill-box">
+              <div class="skill-title">
+                <div class="img-skill">
+                  <img src="./img/python.png" alt="" class="skill-icon" />
+                </div>
+                <h3>Python</h3>
+              </div>
+            </div>
+            <div class="skill-box">
+              <div class="skill-title">
+                <div class="img-skill">
+                  <img src="./img/nodejs.png" alt="" class="skill-icon" />
+                </div>
+                <h3>NodeJs</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ============== Sobre ================ -->
+      <section id="sobre">
+        <h1 class="about-title">Sobre</h1>
+        <section class="home-about">
+          <article class="about-content">
+            <img src="img/heitor.png" class="about-img" />
+            <h1 id="simpleUsage">Heitor</h1>
+            <p>
+              Estudante entusiasmado de Desenvolvimento de Sistemas com paixão
+              por programação.
+            </p>
+            <div class="links">
+              <a
+                class="socialLink linkedin"
+                href="https://www.linkedin.com/in/heitor-manoel-465413250/"
+                target="_blank"
+                ><img src="img/linkedin.svg"
+              /></a>
+              <a
+                class="socialLink github"
+                href="https://github.com/lonelykkj"
+                target="_blank"
+                ><img src="img/github.svg"
+              /></a>
+            </div>
+          </article>
+          <article class="about-content">
+            <img src="img/nikolas.png" class="about-img" />
+            <h1 id="simpleUsage">Nikolas</h1>
+            <p>
+              Estagiário apaixonado por desenvolvimento de software com um foco
+              especial em Inteligência Artificial e Visão Computacional.
+            </p>
+            <div class="links">
+              <a
+                class="socialLink linkedin"
+                href="https://www.linkedin.com/in/nikolas-melo-5743b1258/"
+                target="_blank"
+                ><img src="img/linkedin.svg"
+              /></a>
+              <a
+                class="socialLink github"
+                href="https://github.com/thepokenik"
+                target="_blank"
+                ><img src="img/github.svg"
+              /></a>
+            </div>
+          </article>
         </section>
+      </section>
     </main>
-</body>
+    <!-- ============== Formulário ================ -->
+    <section>
+      <div class="contact-section section" id="contact">
+        <h1 class="section-header">Contato</h1>
+        <form action="" class="contact-form flex">
+          <div class="contact-group flex">
+            <input
+              type="text"
+              name="username"
+              placeholder="Seu nome"
+              required
+              id=""
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Seu email"
+              required
+              id=""
+            />
+          </div>
+          <textarea
+            name=""
+            id=""
+            required
+            placeholder="Sua mensagem"
+            cols="30"
+            rows="10"
+          ></textarea>
+
+          <button class="comic-button">Enviar</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ============== Footer ================ -->
+    <footer>
+      <section class="section-footer">
+        <span> © 2023 - Nikolas Melo & Heitor Manuel </span>
+      </section>
+    </footer>
+  </body>
 </html>
