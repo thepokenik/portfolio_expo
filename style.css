@@ -228,6 +228,113 @@ body.dark .section-footer {
   color: #fff;
 }
 
+/* =============== Responsividade =============== */
+
+@media screen and (max-width: 768px) {
+  .navItems {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navItems li {
+    margin: 10px 0;
+  }
+
+  .logoName {
+    width: 40px;
+    height: 40px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .home {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1295px) {
+  .home {
+    background: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home {
+    background-image: none;
+    background-color: #f4f4f4;
+  }
+
+  .home-content {
+    text-align: center;
+  }
+
+  .project-header {
+    font-size: 1.5em;
+  }
+
+  .project-description {
+    font-size: 0.9em;
+    margin-top: 10px;
+  }
+
+  .comic-button {
+    font-size: 0.8em;
+  }
+
+  .about-content h1 {
+    font-size: 1.5em;
+  }
+
+  .about-content p {
+    font-size: 0.9em;
+    margin-top: 10px;
+  }
+
+  .socialLink {
+    margin: 10px;
+  }
+
+  .navItems {
+    visibility: hidden;
+  }
+ 
+}
+
+@media (min-width: 769px) {
+  .project {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .project-img {
+    flex: 1;
+    text-align: center;
+  }
+
+  .project-content {
+    flex: 2;
+    padding: 20px;
+    text-align: left;
+  }
+
+  .home-about {
+    justify-content: space-evenly;
+  }
+
+  .about-content {
+    max-width: 400px;
+    margin-right: 20px;
+  }
+
+  .about-title {
+    font-size: 48px;
+  }
+}
+
+
+
 /* =============== Projetos =============== */
 
 .projects-list {
@@ -557,102 +664,3 @@ body.dark #myBtn {
   background-color: #4e9c32;
 }
 
-/* =============== Responsividade =============== */
-
-@media screen and (max-width: 768px) {
-  .navItems {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .navItems li {
-    margin: 10px 0;
-  }
-
-  .logoName {
-    width: 40px;
-    height: 40px;
-  }
-
-  h1 {
-    font-size: 20px;
-  }
-
-  .home {
-    flex-direction: column;
-  }
-}
-
-@media screen and (max-width: 1295px) {
-  .home {
-    background: none;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .home {
-    background-image: none;
-    background-color: #f4f4f4;
-  }
-
-  .home-content {
-    text-align: center;
-  }
-
-  .project-header {
-    font-size: 1.5em;
-  }
-
-  .project-description {
-    font-size: 0.9em;
-    margin-top: 10px;
-  }
-
-  .comic-button {
-    font-size: 0.8em;
-  }
-
-  .about-content h1 {
-    font-size: 1.5em;
-  }
-
-  .about-content p {
-    font-size: 0.9em;
-    margin-top: 10px;
-  }
-
-  .socialLink {
-    margin: 10px;
-  }
-}
-
-@media (min-width: 769px) {
-  .project {
-    flex-direction: row;
-    text-align: left;
-  }
-
-  .project-img {
-    flex: 1;
-    text-align: center;
-  }
-
-  .project-content {
-    flex: 2;
-    padding: 20px;
-    text-align: left;
-  }
-
-  .home-about {
-    justify-content: space-evenly;
-  }
-
-  .about-content {
-    max-width: 400px;
-    margin-right: 20px;
-  }
-
-  .about-title {
-    font-size: 48px;
-  }
-}
