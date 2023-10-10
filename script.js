@@ -78,8 +78,3 @@ checkboxInput.addEventListener('change', function () {
 
 // Execute a função para configurar a cor inicial com base no estado inicial do switch
 updateScrollbarColor();
-
-function topFunction() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-  }
